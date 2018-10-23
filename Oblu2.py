@@ -1,3 +1,5 @@
+# Apply Kalman filter to obtain fused sensor data
+
 import numpy as np
 import os
 import matplotlib.pyplot as plt
@@ -57,20 +59,6 @@ for i in range(len(lineL)):
 
 
 
-"""while True:
-        while(os.stat("stepsL.txt").st_size == 0):
-            pass
-	f = open('stepsL.txt', 'r')
-	F = map(float, f.read().split(','))
-	p = F[4]
-	x_L = [F[1], F[2], F[3]]
-
-        while(os.stat("stepsR.txt").st_size == 0):
-            pass
-	g = open('stepsR.txt', 'r')
-        G = map(float, g.read().split(','))
-	z = [G[1],G[2],G[3]]
-	cov1, cov2, cov3, cov4, cov5, cov6 = G[4],G[5],G[6],G[7],G[8],G[9]
 
 	theta = np.radians(p)
 	c, s = np.cos(theta), np.sin(theta)
@@ -90,6 +78,6 @@ for i in range(len(lineL)):
 	plt.subplot(2, 1, 2)	
 	plt.plot(G[1], G[2], '-o',c='red') 
 	plt.show()   
-"""
+
 
 
