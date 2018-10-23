@@ -1,4 +1,5 @@
 # Apply Kalman filter to obtain fused sensor data
+# This script requires complementary scripts in order to execute successfully. Those scripts cannot be uploaded due to copyright issues
 
 import numpy as np
 import os
